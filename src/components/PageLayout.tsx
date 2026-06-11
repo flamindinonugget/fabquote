@@ -1,3 +1,5 @@
+import { EarlyAccessBanner } from "@/components/EarlyAccessBanner";
+import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { StorageWarningBanner } from "@/components/StorageWarningBanner";
@@ -15,12 +17,14 @@ export function PageLayout({ children }: PageLayoutProps) {
       >
         Skip to content
       </a>
+      <EarlyAccessBanner />
       <Header />
       <StorageWarningBanner />
       <main id="main-content" className="flex-1" tabIndex={-1}>
         {children}
       </main>
       <Footer />
+      <FeedbackWidget />
     </div>
   );
 }

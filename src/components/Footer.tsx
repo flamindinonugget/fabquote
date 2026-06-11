@@ -34,6 +34,9 @@ export function Footer() {
           <Link className="hover:text-ink" href="/quote-test-lab">
             Quote Lab
           </Link>
+          <Link className="hover:text-ink" href="/feedback-admin">
+            Feedback
+          </Link>
           <Link className="hover:text-ink" href="/quotes">
             Quotes
           </Link>

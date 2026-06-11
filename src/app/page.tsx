@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CalculatorCard } from "@/components/CalculatorCard";
+import { FeedbackTriggerButton } from "@/components/FeedbackTriggerButton";
 import { PageLayout } from "@/components/PageLayout";
 import { StructuredData } from "@/components/StructuredData";
 import {
@@ -122,6 +123,46 @@ export default function HomePage() {
           {calculatorPages.map((calculator) => (
             <CalculatorCard key={calculator.href} {...calculator} />
           ))}
+        </div>
+      </section>
+
+      <section
+        id="early-access"
+        className="border-t border-line bg-white"
+        aria-labelledby="early-access-heading"
+      >
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[1fr_0.45fr] lg:items-center lg:px-8">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-brand-700">
+              Early Access
+            </p>
+            <h2
+              id="early-access-heading"
+              className="mt-3 max-w-3xl text-3xl font-black tracking-tight text-ink sm:text-4xl"
+            >
+              Help Build the Future of 3D Print Quoting
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-muted">
+              FabQuote is currently available in Early Access while we continue
+              improving quoting accuracy, workflow automation, and business
+              intelligence features.
+            </p>
+            <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-ink">
+              Every piece of feedback directly shapes future updates.
+            </p>
+          </div>
+          <div className="rounded-lg border border-line bg-paper p-5">
+            <p className="text-sm font-black text-ink">
+              Share what happened in your workflow.
+            </p>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              The most useful feedback explains what you were trying to quote,
+              where the flow slowed down, and what would save the most time.
+            </p>
+            <div className="mt-4">
+              <FeedbackTriggerButton label="Share Feedback" />
+            </div>
+          </div>
         </div>
       </section>
     </PageLayout>

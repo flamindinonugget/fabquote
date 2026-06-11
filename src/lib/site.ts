@@ -88,6 +88,12 @@ export const staticPages = [
     href: "/quote-test-lab",
   },
   {
+    title: "Feedback Admin",
+    description:
+      "Review locally stored FabQuote Early Access feedback submissions, workflow pain points, ratings, and JSON export.",
+    href: "/feedback-admin",
+  },
+  {
     title: "Quotes",
     description:
       "Manage FabQuote quote records locally with search, sorting, deletion, and duplication.",
