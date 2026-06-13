@@ -7,7 +7,7 @@ const title = "Privacy Policy";
 const description =
   "Read the FabQuote privacy policy for this 3D printing quoting website.";
 const path = "/privacy-policy";
-const updated = "June 10, 2026";
+const updated = "June 13, 2026";
 
 export const metadata: Metadata = createPageMetadata({ title, description, path });
 
@@ -53,6 +53,19 @@ export default function PrivacyPage() {
             <p className="mt-3">
               If you contact us by email, we may use your message and reply
               address to respond to your request and improve the website.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black tracking-tight text-ink">
+              Billing information
+            </h2>
+            <p className="mt-3">
+              Subscription checkout and billing management are handled by
+              Stripe. FabQuote should store Stripe customer and subscription IDs
+              when an account system and database are connected, but payment
+              card details are processed by Stripe rather than stored by
+              FabQuote.
             </p>
           </section>
 

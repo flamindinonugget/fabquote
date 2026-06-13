@@ -68,11 +68,17 @@ export default function ContactPage() {
               Review the privacy and terms pages for how this lightweight site
               handles calculator usage.
             </p>
-            <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold text-brand-700">
-              <Link className="hover:text-brand-600" href="/privacy-policy">
+            <div className="mt-5 flex flex-wrap gap-3 text-sm">
+              <Link
+                className="fq-link rounded-md px-2 py-1 focus:outline-none focus:ring-4 focus:ring-brand-100"
+                href="/privacy-policy"
+              >
                 Privacy
               </Link>
-              <Link className="hover:text-brand-600" href="/terms-of-service">
+              <Link
+                className="fq-link rounded-md px-2 py-1 focus:outline-none focus:ring-4 focus:ring-brand-100"
+                href="/terms-of-service"
+              >
                 Terms
               </Link>
             </div>

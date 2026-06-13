@@ -27,8 +27,8 @@ export default function HomePage() {
       <section className="border-b border-line bg-white" aria-labelledby="home-heading">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div className="self-center">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-brand-700">
-              FabQuote
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-brand-700">
+              Quote faster. <span className="text-mint-600">Build more.</span>
             </p>
             <h1
               id="home-heading"
@@ -43,19 +43,19 @@ export default function HomePage() {
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/stl-quote-generator"
-                className="inline-flex rounded-md bg-brand-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-100"
+                className="fq-button-primary px-4 py-3 text-sm shadow-sm focus:outline-none focus:ring-4 focus:ring-mint-100"
               >
                 Start quoting
               </Link>
               <Link
                 href="/pricing"
-                className="inline-flex rounded-md border border-line bg-white px-4 py-3 text-sm font-bold text-ink transition hover:bg-paper focus:outline-none focus:ring-4 focus:ring-brand-100"
+                className="fq-button-secondary px-4 py-3 text-sm shadow-sm focus:outline-none focus:ring-4 focus:ring-brand-100"
               >
                 View pricing
               </Link>
               <Link
                 href="/3d-print-cost-calculator"
-                className="inline-flex rounded-md border border-line bg-white px-4 py-3 text-sm font-bold text-ink transition hover:bg-paper focus:outline-none focus:ring-4 focus:ring-brand-100"
+                className="fq-button-secondary px-4 py-3 text-sm shadow-sm focus:outline-none focus:ring-4 focus:ring-brand-100"
               >
                 Free calculators
               </Link>
@@ -63,40 +63,40 @@ export default function HomePage() {
           </div>
 
           <aside
-            className="rounded-lg border border-line bg-paper p-4 shadow-soft"
+            className="fq-surface self-center p-5"
             aria-label="Sample print quote"
           >
-            <div className="rounded-lg border border-line bg-white p-4">
-              <div className="flex items-center justify-between border-b border-line pb-3">
-                <div>
-                  <p className="text-sm font-bold text-ink">Sample print quote</p>
-                  <p className="text-xs font-medium text-muted">PLA bracket, 4h 30m</p>
-                </div>
-                <span className="rounded-md bg-mint-50 px-2.5 py-1 text-xs font-bold text-mint-700">
-                  Profitable
-                </span>
+            <div className="flex items-center justify-between border-b border-line pb-4">
+              <div>
+                <p className="text-sm font-black text-ink">Sample print quote</p>
+                <p className="text-xs font-semibold text-muted">PLA bracket, 4h 30m</p>
               </div>
-              <dl className="mt-4 grid gap-3 text-sm">
-                <div className="flex items-center justify-between">
-                  <dt className="text-muted">Filament</dt>
-                  <dd className="font-bold text-ink">$1.63</dd>
-                </div>
-                <div className="flex items-center justify-between">
-                  <dt className="text-muted">Electricity</dt>
-                  <dd className="font-bold text-ink">$0.09</dd>
-                </div>
-                <div className="flex items-center justify-between">
-                  <dt className="text-muted">Setup</dt>
-                  <dd className="font-bold text-ink">$4.00</dd>
-                </div>
-                <div className="mt-2 rounded-lg bg-brand-50 p-4">
-                  <dt className="text-sm font-bold text-brand-700">Suggested price</dt>
-                  <dd className="mt-1 text-3xl font-black tracking-tight text-brand-700">
-                    $11.44
-                  </dd>
-                </div>
-              </dl>
+              <span className="rounded-md bg-mint-50 px-2.5 py-1 text-xs font-black text-mint-700">
+                Profitable
+              </span>
             </div>
+            <dl className="mt-4 grid gap-3 text-sm">
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-muted">Filament</dt>
+                <dd className="font-black text-ink">$1.63</dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-muted">Electricity</dt>
+                <dd className="font-black text-ink">$0.09</dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-muted">Setup</dt>
+                <dd className="font-black text-ink">$4.00</dd>
+              </div>
+              <div className="mt-2 rounded-md bg-brand-50 p-4">
+                <dt className="text-sm font-black text-brand-700">
+                  Suggested price
+                </dt>
+                <dd className="mt-1 text-3xl font-black tracking-tight text-brand-700">
+                  $11.44
+                </dd>
+              </div>
+            </dl>
           </aside>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function HomePage() {
               Every piece of feedback directly shapes future updates.
             </p>
           </div>
-          <div className="rounded-lg border border-line bg-paper p-5">
+          <div className="rounded-lg border border-line bg-paper p-5 shadow-sm">
             <p className="text-sm font-black text-ink">
               Share what happened in your workflow.
             </p>

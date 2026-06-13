@@ -7,7 +7,7 @@ const title = "Terms of Service";
 const description =
   "Read the terms that apply when using FabQuote calculators and website content.";
 const path = "/terms-of-service";
-const updated = "June 10, 2026";
+const updated = "June 13, 2026";
 
 export const metadata: Metadata = createPageMetadata({ title, description, path });
 
@@ -63,6 +63,18 @@ export default function TermsPage() {
             <p className="mt-3">
               The website is provided as available. Features may change, break,
               or be removed as the product evolves.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-black tracking-tight text-ink">
+              Subscriptions and billing
+            </h2>
+            <p className="mt-3">
+              Paid FabQuote plans are billed through Stripe. Test-mode checkout
+              may be available before live billing launches. Subscription
+              features, prices, trial periods, and plan limits may change before
+              production release.
             </p>
           </section>
 

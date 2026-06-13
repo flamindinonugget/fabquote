@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+const footerLinkClass =
+  "rounded-md px-2 py-1 font-bold text-muted no-underline transition hover:bg-brand-50 hover:text-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-100";
+
 export function Footer() {
   return (
     <footer className="border-t border-line bg-white">
@@ -16,52 +19,52 @@ export function Footer() {
           className="flex flex-wrap gap-3 text-sm font-semibold text-muted md:justify-end"
           aria-label="Workspace and calculator links"
         >
-          <Link className="hover:text-ink" href="/dashboard">
+          <Link className={footerLinkClass} href="/dashboard">
             Dashboard
           </Link>
-          <Link className="hover:text-ink" href="/dashboard/analytics">
+          <Link className={footerLinkClass} href="/dashboard/analytics">
             Analytics
           </Link>
-          <Link className="hover:text-ink" href="/customers">
+          <Link className={footerLinkClass} href="/customers">
             Customers
           </Link>
-          <Link className="hover:text-ink" href="/projects">
+          <Link className={footerLinkClass} href="/projects">
             Projects
           </Link>
-          <Link className="hover:text-ink" href="/machines">
+          <Link className={footerLinkClass} href="/machines">
             Machines
           </Link>
-          <Link className="hover:text-ink" href="/quote-test-lab">
+          <Link className={footerLinkClass} href="/quote-test-lab">
             Quote Lab
           </Link>
-          <Link className="hover:text-ink" href="/feedback-admin">
+          <Link className={footerLinkClass} href="/feedback-admin">
             Feedback
           </Link>
-          <Link className="hover:text-ink" href="/quotes">
+          <Link className={footerLinkClass} href="/quotes">
             Quotes
           </Link>
-          <Link className="hover:text-ink" href="/stl-quote-generator">
+          <Link className={footerLinkClass} href="/stl-quote-generator">
             STL Quote
           </Link>
-          <Link className="hover:text-ink" href="/3d-print-cost-calculator">
+          <Link className={footerLinkClass} href="/3d-print-cost-calculator">
             Print Cost
           </Link>
-          <Link className="hover:text-ink" href="/filament-usage-calculator">
+          <Link className={footerLinkClass} href="/filament-usage-calculator">
             Filament
           </Link>
-          <Link className="hover:text-ink" href="/electricity-cost-calculator">
+          <Link className={footerLinkClass} href="/electricity-cost-calculator">
             Electricity
           </Link>
-          <Link className="hover:text-ink" href="/profit-margin-calculator">
+          <Link className={footerLinkClass} href="/profit-margin-calculator">
             Profit
           </Link>
-          <Link className="hover:text-ink" href="/pricing">
+          <Link className={footerLinkClass} href="/pricing">
             Pricing
           </Link>
-          <Link className="hover:text-ink" href="/about">
+          <Link className={footerLinkClass} href="/about">
             About
           </Link>
-          <Link className="hover:text-ink" href="/contact">
+          <Link className={footerLinkClass} href="/contact">
             Contact
           </Link>
         </nav>
@@ -69,10 +72,10 @@ export function Footer() {
           className="flex flex-wrap gap-3 text-sm font-semibold text-muted md:justify-end"
           aria-label="Legal links"
         >
-          <Link className="hover:text-ink" href="/privacy-policy">
+          <Link className={footerLinkClass} href="/privacy-policy">
             Privacy
           </Link>
-          <Link className="hover:text-ink" href="/terms-of-service">
+          <Link className={footerLinkClass} href="/terms-of-service">
             Terms
           </Link>
         </nav>

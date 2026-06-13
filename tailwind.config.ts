@@ -10,21 +10,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#172033",
-        muted: "#5b6577",
-        line: "#dbe3ee",
-        paper: "#f7f9fc",
+        ink: "#111827",
+        muted: "#4B5563",
+        line: "#d8dee7",
+        paper: "#F8FAFC",
         brand: {
-          50: "#eef8ff",
-          100: "#d8efff",
-          500: "#1877f2",
-          600: "#0f65d8",
-          700: "#0e55b8",
+          50: "#eef4fa",
+          100: "#d9e5f2",
+          500: "#2f537d",
+          600: "#1E3A5F",
+          700: "#142842",
         },
         mint: {
-          50: "#ecfdf6",
-          500: "#19a974",
-          700: "#08724f",
+          50: "#ecfdf3",
+          100: "#d1fae0",
+          500: "#22C55E",
+          600: "#16a34a",
+          700: "#15803d",
         },
         amber: {
           50: "#fff7e6",

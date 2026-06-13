@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: "/assets/fabquote-brand-reference.jpg",
+        width: 1536,
+        height: 1024,
+        alt: "FabQuote brand identity",
+      },
+    ],
     type: "website",
     locale: "en_US",
   },
@@ -40,6 +48,14 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  icons: {
+    icon: [
+      { url: "/assets/fabquote-icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/assets/fabquote-icon.png", sizes: "512x512", type: "image/png" },
+    ],
   },
 };
 

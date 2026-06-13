@@ -113,7 +113,7 @@ export function FeedbackWidget() {
         className="fixed bottom-4 right-4 z-50 rounded-full bg-ink px-4 py-3 text-sm font-black text-white shadow-soft transition hover:bg-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-100"
         aria-haspopup="dialog"
       >
-        💬 Feedback
+        Feedback
       </button>
 
       {isOpen ? (
@@ -155,7 +155,7 @@ export function FeedbackWidget() {
                   <button
                     type="button"
                     onClick={closeModal}
-                    className="rounded-md border border-line bg-white px-3 py-2 text-sm font-bold text-muted transition hover:bg-paper hover:text-ink"
+                    className="rounded-md border border-line bg-white px-3 py-2 text-sm font-bold text-muted transition hover:bg-paper hover:text-ink focus:outline-none focus:ring-4 focus:ring-brand-100"
                     aria-label="Close feedback modal"
                   >
                     Close
@@ -179,7 +179,7 @@ export function FeedbackWidget() {
                         }`}
                         aria-pressed={form.rating === rating}
                       >
-                        {"⭐".repeat(rating)} {rating}
+                        Rating {rating}
                       </button>
                     ))}
                   </div>
